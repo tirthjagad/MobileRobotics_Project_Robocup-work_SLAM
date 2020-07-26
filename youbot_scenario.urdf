@@ -1,0 +1,247 @@
+<robot name="youbot">
+<!-- Left side wall -->
+  <link name="wall_1">
+    <inertial>
+      <origin xyz="0 2 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 2 0"/>
+      <geometry>
+        <box size="5 0.1 0.4" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 2 0"/>
+      <geometry>
+      <box size="5 0.1 0.4" />
+      </geometry>
+    </collision>
+  </link>
+<!-- joint btw Left side wall and bottom rectengular -->
+  <joint name="join7" type="fixed">
+    <origin xyz="-1 0 -0.1" rpy="0 0 0"/>
+    <parent link="wall_1"/>
+    <child link="wall_7"/>
+  </joint>
+<!-- bottom rectengular wall -->
+  <link name="wall_7">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.5 0.2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.5 0.2" />
+      </geometry>
+    </collision>
+  </link>
+
+<!-- joint btw bottom rectengular and its above rectengular -->
+  <joint name="join8" type="fixed">
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    <parent link="wall_7"/>
+    <child link="wall_8"/>
+  </joint>
+<!-- rectengular above the bottom rectengular -->
+  <link name="wall_8">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.5 0.2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.5 0.2" />
+      </geometry>
+    </collision>
+  </link>
+<!-- joint btw left side wall and sphere -->
+  <joint name="join10" type="fixed">
+    <origin xyz="0 0.5 0.0" rpy="0 0 0"/>
+    <parent link="wall_1"/>
+    <child link="wall_10"/>
+  </joint>
+<!-- sphere -->
+  <link name="wall_10">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+    </collision>
+  </link>	
+<!-- joint btw left side wall and small front wall -->
+  <joint name="join6" type="fixed">
+    <origin xyz="1.4 0 0" rpy="0 0 0"/>
+    <parent link="wall_1"/>
+    <child link="wall_9"/>
+  </joint>
+<!-- small front wall -->
+  <link name="wall_9">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.9 0.4" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.9 0.4" />
+      </geometry>
+    </collision>
+  </link>	
+
+	
+<!-- joint btw left side wall and front wall -->
+  <joint name="join1" type="fixed">
+    <origin xyz="2.45 0 0" rpy="0 0 0"/>
+    <parent link="wall_1"/>
+    <child link="wall_2"/>
+  </joint>
+<!-- front wall -->
+  <link name="wall_2">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.1 3.90 0.4" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+      <box size="0.1 3.90 0.4" />
+      </geometry>
+    </collision>
+  </link>
+<!-- joint btw front wall and right side wall -->
+  <joint name="join2" type="fixed">
+    <origin xyz="-2.45 -2.0 0" rpy="0 0 0"/>
+    <parent link="wall_2"/>
+    <child link="wall_3"/>
+  </joint>
+<!-- right side wall -->
+  <link name="wall_3">
+    <inertial>
+      <origin xyz="0 0 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="5 0.1 0.4" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+      <box size="5 0.1 0.4" />
+      </geometry>
+    </collision>
+  </link>
+
+<!-- joint btw right side wall and back wall -->
+
+  <joint name="join5" type="fixed">
+    <origin xyz="-2.45 0.05 0" rpy="0 0 0"/>
+    <parent link="wall_3"/>
+    <child link="wall_6"/>
+  </joint>
+<!-- back wall -->
+  <link name="wall_6">
+    <inertial>
+      <origin xyz="0 1.5 0" /> 
+      <mass value="10.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 1.5 0"/>
+      <geometry>
+        <box size="0.1 3 0.4" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 1.5 0"/>
+      <geometry>
+      <box size="0.1 3 0.4" />
+      </geometry>
+    </collision>
+  </link>
+  
+
+
+
+  <gazebo reference="wall_1">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_2">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_3">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_6">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_7">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_8">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_9">
+  <material>Gazebo/PaintedWall</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="wall_10">
+  <material>Gazebo/Wood</material>
+  <selfCollide>true</selfCollide>
+  </gazebo>
+
+
+</robot>
