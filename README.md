@@ -14,9 +14,17 @@ rosbag record -o any_name_for_file /odom /base_scan
 To run controller goto src folder and then use: <br/>
 python youbot_controller.py
 
-In Matlab put recorded bag file name:
+In Matlab put recorded bag file name and run the code.
 
-run the code.
+To spawn the objects goto src and use:<br/>
+python sdf_spawn.py
+
+To change the Model pose goto src and use:<br/>
+python model_state.py
+
+
+To delete the objects goto src and use:<br/>
+python delete_urdf.py
 
 
 
