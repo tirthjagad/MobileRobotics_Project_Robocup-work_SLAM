@@ -48,8 +48,9 @@ MATLAB SLAM
 
 
 Spawn Objects MATLAB SLAM
-[[image:https://raw.githubusercontent.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/master/spawnslam.jpg|20px|frameless|caption]]
-=Project Files=
+![alt text](https://raw.githubusercontent.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/master/spawnslam.jpg)
+
+# Project Files
 https://github.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM
 
 # Conclusion
