@@ -27,8 +27,8 @@ MATLAB pose graph-based SLAM algorithm is used for the SLAM demonstration as per
 Gazebo ROS services spawn_model , set_model_state and delete_model are used for the spawning and deleting objects in environment.
  
 
-# Problems encountered during work=
-1) Firstly, I installed ubuntu as a subsystem of windows and in that, I installed ROS Melodic and other packages for the practicals. I installed  youbot_desciription and yooubot_simulation package in WSL but it was taking so much time to open gazebo and mostly gazebo was crashing then I installed Ubuntu OS separately and installed ROS Melodic, Gazebo, and youbot packages.
+# Problems encountered during work
+1) Firstly, I installed ubuntu as a subsystem of windows and in that, I installed ROS Melodic and other packages for the practicals. I installed  youbot_desciription and youbot_simulation package in WSL but it was taking so much time to open gazebo and mostly gazebo was crashing then I installed Ubuntu OS separately and installed ROS Melodic, Gazebo, and youbot packages.
 2) Python script for controlling of youbot needed try and error methods to set the speed and conditions for the movement of the robot in the environment.
 3) To perform SLAM I tried gmapping  but not able to get the proper result so then I switch to MATLAB pose graph-based SLAM algorithm
 4) In MATLAB for the SLAM algorithm Map resolution, Loop closure threshold, Loop closure range, Loop closure Max attempts, Movement threshold, are the parameters that needed try and error method and much time to set the proper value and to achieve proper graph result.
@@ -43,8 +43,9 @@ https://youtu.be/tQC2mOZRKYM
 By the python script, the Model state can be changed and it is possible to delete the objects. 
 https://youtu.be/kQAceafS1hA
 
-MATLAB SLAM 
-[[image:https://raw.githubusercontent.com/tirthjagad/SLAM/master/finalfigure_SLAM.jpg|20px|frameless|caption]]
+MATLAB SLAM
+![alt text](https://raw.githubusercontent.com/tirthjagad/SLAM/master/finalfigure_SLAM.jpg)
+
 
 Spawn Objects MATLAB SLAM
 [[image:https://raw.githubusercontent.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/master/spawnslam.jpg|20px|frameless|caption]]
