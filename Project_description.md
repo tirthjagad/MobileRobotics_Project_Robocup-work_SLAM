@@ -44,7 +44,7 @@ By the python script, the Model state can be changed and it is possible to delet
 https://youtu.be/kQAceafS1hA
 
 MATLAB SLAM
-![alt text](https://raw.githubusercontent.com/tirthjagad/SLAM/master/finalfigure_SLAM.jpg)
+![alt text](https://raw.githubusercontent.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/master/finalfigure_SLAM.jpg)
 
 
 Spawn Objects MATLAB SLAM
