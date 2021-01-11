@@ -28,10 +28,10 @@ Gazebo ROS services spawn_model , set_model_state and delete_model are used for 
  
 
 =Problems encountered during work=
-# Firstly, I installed ubuntu as a subsystem of windows and in that, I installed ROS Melodic and other packages for the practicals. I installed  youbot_desciription and yooubot_simulation package in WSL but it was taking so much time to open gazebo and mostly gazebo was crashing then I installed Ubuntu OS separately and installed ROS Melodic, Gazebo, and youbot packages.
-# Python script for controlling of youbot needed try and error methods to set the speed and conditions for the movement of the robot in the environment.
-# To perform SLAM I tried gmapping  but not able to get the proper result so then I switch to MATLAB pose graph-based SLAM algorithm
-# In MATLAB for the SLAM algorithm Map resolution, Loop closure threshold, Loop closure range, Loop closure Max attempts, Movement threshold, are the parameters that needed try and error method and much time to set the proper value and to achieve proper graph result.
+1) Firstly, I installed ubuntu as a subsystem of windows and in that, I installed ROS Melodic and other packages for the practicals. I installed  youbot_desciription and yooubot_simulation package in WSL but it was taking so much time to open gazebo and mostly gazebo was crashing then I installed Ubuntu OS separately and installed ROS Melodic, Gazebo, and youbot packages.
+2) Python script for controlling of youbot needed try and error methods to set the speed and conditions for the movement of the robot in the environment.
+3) To perform SLAM I tried gmapping  but not able to get the proper result so then I switch to MATLAB pose graph-based SLAM algorithm
+4) In MATLAB for the SLAM algorithm Map resolution, Loop closure threshold, Loop closure range, Loop closure Max attempts, Movement threshold, are the parameters that needed try and error method and much time to set the proper value and to achieve proper graph result.
 
 =Test Result=
 Recording of topic /odom for pose data and /base_scan for ranges data in ROSBAG with python script for controlling youbot around environment.<br/>
@@ -55,6 +55,6 @@ https://github.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM
 In this project SLAM algorithm with simple controller is performed  with spawning and deleting of objects but Side walls ,complicated objects are not taken into consideration in the environment. 
 
 =References=
-# http://ais.informatik.uni-freiburg.de/teaching/ss12/robotics/slides/12-slam.pdf
-# https://de.mathworks.com/help/nav/ug/implement-simultaneous-localization-and-mapping-with-lidar-scans.html
-# https://de.mathworks.com/help/ros/ref/rosbag.html
+1) http://ais.informatik.uni-freiburg.de/teaching/ss12/robotics/slides/12-slam.pdf
+2) https://de.mathworks.com/help/nav/ug/implement-simultaneous-localization-and-mapping-with-lidar-scans.html
+3) https://de.mathworks.com/help/ros/ref/rosbag.html
