@@ -1,14 +1,14 @@
-#Introduction - Gazebo Robot@Work scenario and demonstration of SLAM Algorithm 
+# Introduction - Gazebo Robot@Work scenario and demonstration of SLAM Algorithm 
 The main goal of this project is to demonstrate SLAM(Simultaneously Localization and Mapping) Algorithm with youbot for the scenario which is based on Robot@Work in Gazebo. In SLAM it is necessary to estimate pose of the robot and the map of the environment at the same time. 
 
 SLAM is considered a fundamental problem for robots to become truly autonomous.SLAM is central to a range of indoor, outdoor, in-air and underwater applications for both manned and autonomous vehicles. 
 
 
-#Milestone Completation
-1. Installation and Runing of Gazebo in Linux
+# Milestone Completation
+# 1. Installation and Runing of Gazebo in Linux
 Installed Ubantu on laptop and dowanloaded Gazebo 9 with supported packages to run Gazebo.<br />
 
-2. Youbot Launch file in Gazebo''<br />
+# 2. Youbot Launch file in Gazebo
 Dowanloaded youbot_description package from github (https://github.com/youbot/youbot_description) and youbot_simulation(https://github.com/mas-group/youbot_simulation) package to build gazebo world and link youbot to that environment.
 
 ''Creation of custom scenario in Gazebo''<br />
