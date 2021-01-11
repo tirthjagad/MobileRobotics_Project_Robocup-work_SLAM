@@ -1,6 +1,6 @@
 # MobileRobotics_Project_Robocup-work_SLAM
 
-Project explanation is given on https://github.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/blob/master/Project_description.md 
+Project explanation is given on (https://github.com/tirthjagad/MobileRobotics_Project_Robocup-work_SLAM/blob/master/Project_description.md)
 
 Extract the following compressed files in your catkin_ws location.<br/> 
 1)src <br/>
